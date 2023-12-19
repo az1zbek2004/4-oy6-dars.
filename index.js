@@ -26,24 +26,24 @@
 
 
         // FIRST NUMBER 
-let max;
-function maxThreeNumbers(a,b,c) {
+// let max;
+// function maxThreeNumbers(a,b,c) {
 
-    if (a>b) {
-        max=a
-    }else{
-        max=b;
-    }
+//     if (a>b) {
+//         max=a
+//     }else{
+//         max=b;
+//     }
 
-    if (max<c) {
-        max=c;
-    }
+//     if (max<c) {
+//         max=c;
+//     }
 
-    return max;
-}
+//     return max;
+// }
 
 
-console.log(maxThreeNumbers(4,20,5));
+// console.log(maxThreeNumbers(4,20,5));
 
 
 
@@ -134,6 +134,7 @@ console.log(maxThreeNumbers(4,20,5));
     
 
     // FIFTH NUMBERS 
+
 // function kvadratKub(n) {
 //     let result;
 //     if (n%3==0&&n%5==0) {
@@ -146,3 +147,26 @@ console.log(maxThreeNumbers(4,20,5));
 // }
 //     let n=+prompt("Sonni kiriting")
 //     console.log(kvadratKub(n));
+
+
+    // SIXTH NUMBERS 
+
+function maxNumber(num1, num2) {
+    on1=Math.trunc(num1/10);
+    bir1=num1%10;
+    res1=on1*bir1;
+
+    on2=Math.trunc(num2/10);
+    bir2=num2%10;
+    res2=on2*bir2;
+
+    if (res1>res2) {
+        max=res1;
+    } else {
+        max=res2;
+    }
+
+    return max;
+}
+
+console.log(maxNumber(32, 52));
