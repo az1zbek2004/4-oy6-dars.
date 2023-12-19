@@ -49,63 +49,63 @@
 
 // SECOND NUMBER 
 
-// function raqamdanSozga(raqam) {
-//     let birliklar = {
-//         0: 'nol', 1: 'bir', 2: 'ikki', 3: 'uch', 4: 'to\'rt',
-//         5: 'besh', 6: 'olti', 7: 'yeti', 8: 'sakkiz', 9: 'to\'qqiz'
-//     };
+function raqamdanSozga(raqam) {
+    let birliklar = {
+        0: 'nol', 1: 'bir', 2: 'ikki', 3: 'uch', 4: 'to\'rt',
+        5: 'besh', 6: 'olti', 7: 'yeti', 8: 'sakkiz', 9: 'to\'qqiz'
+    };
 
-//     let onliklar = {
-//         0: '', 1: 'o\'n', 2: 'yigirma', 3: 'o\'ttiz', 4: 'qirq',
-//         5: 'ellik', 6: 'oltmish', 7: 'yetmish', 8: 'sakson', 9: 'to\'qson'
-//     };
+    let onliklar = {
+        0: '', 1: 'o\'n', 2: 'yigirma', 3: 'o\'ttiz', 4: 'qirq',
+        5: 'ellik', 6: 'oltmish', 7: 'yetmish', 8: 'sakson', 9: 'to\'qson'
+    };
 
-//     let birlik = raqam % 10;
-//     let onlik = Math.trunc(raqam / 10);
+    let birlik = raqam % 10;
+    let onlik = Math.trunc(raqam / 10);
 
-//     let birlikSoz = birliklar[birlik];
-//     let onlikSoz = onliklar[onlik];
+    let birlikSoz = birliklar[birlik];
+    let onlikSoz = onliklar[onlik];
 
-//     switch (onlik) {
-//         case 0:
-//             return birlikSoz;
-//         case 1:
-//             if (birlik === 0) {
-//                 return 'o\'n';
-//             } else {
-//                 return onlikSoz + ' ' + birlikSoz;
-//             }
-//         default:
-//             if (birlik === 0) {
-//                 return onlikSoz;
-//             } else {
-//                 return onlikSoz + ' ' + birlikSoz;
-//             }
-//     }
-// }
+    switch (onlik) {
+        case 0:
+            return birlikSoz;
+        case 1:
+            if (birlik === 0) {
+                return 'o\'n';
+            } else {
+                return onlikSoz + ' ' + birlikSoz;
+            }
+        default:
+            if (birlik === 0) {
+                return onlikSoz;
+            } else {
+                return onlikSoz + ' ' + birlikSoz;
+            }
+    }
+}
 
-// // Misol uchun funksiyani tekshirish:
-// let son = 10; // O'zgartiring: istalgan 2 xonali son
-// let soz = raqamdanSozga(son);
-// console.log(son + ' -> ' + soz);
+// Misol uchun funksiyani tekshirish:
+let son = 10; // O'zgartiring: istalgan 2 xonali son
+let soz = raqamdanSozga(son);
+console.log(son + ' -> ' + soz);
 
 
 
 // THIRD NUMBERS 
 
-function toq(n) {
-    let i=1;
-    let counter=0;     
-    do {
-            counter++;
-            i+=2;
-            } while (n>=i);
+// function toq(n) {
+//     let i=1;
+//     let counter=0;     
+//     do {
+//             counter++;
+//             i+=2;
+//             } while (n>=i);
     
-            return counter;
-    }
+//             return counter;
+//     }
     
-    let n=+prompt("Sonni kiriting ")
-    console.log(toq(n));
+//     let n=+prompt("Sonni kiriting ")
+//     console.log(toq(n));
     
     
     
