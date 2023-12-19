@@ -93,19 +93,19 @@
 
 // THIRD NUMBERS 
 
-// function toq(n) {
-//     let i=1;
-//     let counter=0;     
-//     do {
-//             counter++;
-//             i+=2;
-//             } while (n>=i);
+function toq(n) {
+    let i=1;
+    let counter=0;     
+    do {
+            counter++;
+            i+=2;
+            } while (n>=i);
     
-//             return counter;
-//     }
+            return counter;
+    }
     
-//     let n=+prompt("Sonni kiriting ")
-//     console.log(toq(n));
+    let n=+prompt("Sonni kiriting ")
+    console.log(toq(n));
     
     
     
@@ -134,15 +134,15 @@
     
 
     // FIFTH NUMBERS 
-function kvadratKub(n) {
-    let result;
-    if (n%3==0&&n%5==0) {
-        result=n**2;
-    } else {
-        result=n**3;
-    }
+// function kvadratKub(n) {
+//     let result;
+//     if (n%3==0&&n%5==0) {
+//         result=n**2;
+//     } else {
+//         result=n**3;
+//     }
 
-    return result;
-}
-    let n=+prompt("Sonni kiriting")
-    console.log(kvadratKub(n));
+//     return result;
+// }
+//     let n=+prompt("Sonni kiriting")
+//     console.log(kvadratKub(n));
