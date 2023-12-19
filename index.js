@@ -151,22 +151,44 @@
 
     // SIXTH NUMBERS 
 
-function maxNumber(num1, num2) {
-    on1=Math.trunc(num1/10);
-    bir1=num1%10;
-    res1=on1*bir1;
+// function maxNumber(num1, num2) {
+//     on1=Math.trunc(num1/10);
+//     bir1=num1%10;
+//     res1=on1*bir1;
 
-    on2=Math.trunc(num2/10);
-    bir2=num2%10;
-    res2=on2*bir2;
+//     on2=Math.trunc(num2/10);
+//     bir2=num2%10;
+//     res2=on2*bir2;
 
-    if (res1>res2) {
-        max=res1;
-    } else {
-        max=res2;
+//     if (res1>res2) {
+//         max=res1;
+//     } else {
+//         max=res2;
+//     }
+
+//     return max;
+// }
+
+// console.log(maxNumber(32, 52));
+
+
+    // SEVENTH NUMBERS 
+
+function tub(n) {
+    counter=0;
+    for (let i = 1; i <= n; i++) {
+       if (n%i==0) {
+        counter++;
+       }        
     }
 
-    return max;
+    if (counter==2) {
+        result="Tub son";
+    } else {
+        result="Tub son emas"
+    }
+
+    return result;
 }
 
-console.log(maxNumber(32, 52));
+console.log(tub(11));
